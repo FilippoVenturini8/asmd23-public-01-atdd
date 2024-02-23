@@ -32,4 +32,13 @@ public class CalculatorSteps {
             throw new IllegalStateException();
         }
     }
+
+
+    @Then("the multiplication should be {int}")
+    public void theMultiplicationShouldBeArg(int arg0) {
+        this.calculator.multiply();
+        if (arg0 != this.calculator.getResult()) {
+            throw new IllegalStateException();
+        }
+    }
 }
