@@ -24,4 +24,12 @@ public class CalculatorSteps {
             throw new IllegalStateException();
         }
     }
+
+    @Then("the subtraction should be {int}")
+    public void theSubtractionShouldBe(int arg0) {
+        this.calculator.subtract();
+        if (arg0 != this.calculator.getResult()) {
+            throw new IllegalStateException();
+        }
+    }
 }
