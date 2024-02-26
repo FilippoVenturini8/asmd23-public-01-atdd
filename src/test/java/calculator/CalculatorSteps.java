@@ -41,4 +41,17 @@ public class CalculatorSteps {
             throw new IllegalStateException();
         }
     }
+
+
+    @Then("the division should be {int}")
+    public void theDivisionShouldBe(int arg0) {
+        this.calculator.divide();
+        if (arg0 != this.calculator.getResult()) {
+            throw new IllegalStateException();
+        }
+    }
+
+    @Then("the calculator should show an error message")
+    public void theCalculatorShouldShowAnErrorMessage() {
+    }
 }
