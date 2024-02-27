@@ -24,8 +24,11 @@ With this second prompt the objective is to make `ChatGPT` **modify** the code f
 
 > "In each scenario I want a When clause that add the two numbers in the calculator like this: "When I add N1 and N2". In the Then clause for be more specific the clause should say "Then the division should be R" where R is the result."
 
-The feature generated with this second prompt are completely compatible with the already generated steps and requires to generate only the step necessary for the division.
+The feature generated with this second prompt is contained in `Calculation-LLM-division.feature` are completely compatible with the already generated steps and requires to generate only the step necessary for the division.
 
+With the last prompt the goal is to **improve** the current implementation provided by `ChatGPT` by realizing just one `Scenario Outline` insthead of multiple repretitive scenarios.
 
+> "Modify the specification using only a Scenario Outline fo test every scenarios"
 
+The result is contained in `Calculation-LLM-division-outline.feature` is correct and doesn't requires any additional changes.
 
