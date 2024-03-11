@@ -1,4 +1,4 @@
-# Lab 01 
+# Lab 01 - ATDD
 
 ## Task 1: Calculator
 
